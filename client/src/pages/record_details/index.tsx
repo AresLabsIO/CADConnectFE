@@ -15,7 +15,7 @@ import { useNavigate } from "@tanstack/react-router";
 import { Route } from "../../routes/__root";
 import { useCall } from "../../hooks/useCall";
 
-function DetailsPage() {
+function RecordDetailsPage() {
   const { recordId, dataId } = Route.useParams();
   const call = useCall(recordId)
   const navigate = useNavigate();
@@ -122,4 +122,4 @@ function DetailsPage() {
   );
 }
 
-export default DetailsPage;
+export default RecordDetailsPage;

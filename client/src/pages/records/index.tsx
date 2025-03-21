@@ -12,7 +12,7 @@ import CommonTable from "../../components/CommonTable";
 import { useCalls } from "../../hooks/useCalls";
 import { Route } from "../../routes/__root";
 
-function DashboardPage() {
+function RecordsPage() {
   const { dataId } = Route.useParams();
   const calls = useCalls(dataId);
 
@@ -69,4 +69,4 @@ function DashboardPage() {
   );
 }
 
-export default DashboardPage;
+export default RecordsPage;
